@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/space"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/astronaut_25"
+        />
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:text="Астронавт"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="100dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:background="#48C4D6A3"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_write_wish"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="Написать мое пожелание астронавту"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_my_wish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#A6DFC3EF"
+        android:padding="20dp"
+        android:textAlignment="center"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pass_wish"
+        android:layout_width="260dp"
+        android:layout_height="60dp"
+        android:text="Послать мое пожелание астронавту"
+        app:cornerRadius="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
